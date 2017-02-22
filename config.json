@@ -1,7 +1,7 @@
 {
-  "api_key": "API_KEY_GOES_HERE",
-  "shapefile_path": "/FULL/PATH/TO/SHAPEFILE/GOES/HERE",
-  "debug": false,
-  "shapefile_polygon_id": "UNIQUE_SAMPLE_REGION_IDENTIFIER",
+  "api_key": "I233L5OlxMqsPVfnxrEBiOpZ3As-cPlpkpwzK9L1",
+  "shapefile_path": "minneapolis_st_paul_tracts/minneapolis_st_paul_tracts",
+  "debug": true,
+  "shapefile_polygon_id": "FIPS",
   "weeks_to_run": 1
 }
