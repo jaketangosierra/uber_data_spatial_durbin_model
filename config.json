@@ -1,0 +1,7 @@
+{
+  "api_key": "API_KEY_GOES_HERE",
+  "shapefile_path": "/FULL/PATH/TO/SHAPEFILE/GOES/HERE",
+  "debug": false,
+  "shapefile_polygon_id": "UNIQUE_SAMPLE_REGION_IDENTIFIER",
+  "weeks_to_run": 1
+}

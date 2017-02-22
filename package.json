@@ -1,0 +1,26 @@
+{
+  "name": "uber_data_spatial_durbin_model",
+  "version": "1.0.0",
+  "description": "A small node.js server to query the Uber Estimate API and gather Uber ETA data for all geometries in a shapefile.",
+  "main": "ping_uber.js",
+  "dependencies": {
+    "@turf/centroid": "^3.10.3",
+    "@turf/helpers": "^3.10.3",
+    "shp": "^0.0.1",
+    "sqlite3": "^3.1.8"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jtsmn/uber_data_spatial_durbin_model.git"
+  },
+  "author": "Jacob Thebault-Spieker",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jtsmn/uber_data_spatial_durbin_model/issues"
+  },
+  "homepage": "https://github.com/jtsmn/uber_data_spatial_durbin_model#readme"
+}
