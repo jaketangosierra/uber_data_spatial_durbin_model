@@ -6,12 +6,12 @@ This package consists of two parts:
  - our analysis R file, which defines our spatial Durbin modelling approach.
 
 ## API script (ping_uber.js)
--------------------------------------
 Here, we have included the node-server (ping_uber.js). In our data collection, we wrapped this in a bash script to properly record the data. We also used a Chicago-specific shapefile for gathering data, and used an Uber Developer API key.
 
 Both of these can easily be replaced by developers.
 
 To use this, you will need:
+
 1. A shapefile of the sample areas (e.g. census tracts) in the region of interest. The attributes table should contain the relevant independent variablesfor the sample areas (e.g. median household income of a census tract, etc.).
 2. An Uber Developer account, and an 'application' setup, in order to get an Uber API Server Token.
 2. To update config.json, and to define `api_key`, `shapefile_path`, `shapefile_polygon_id`, and `weeks_to_run`
@@ -36,11 +36,11 @@ This will write the sampled ETA times, the timestamp of the sample, and the `sha
 
 
 ## R analysis (analysis)
--------------------------------------
 
 The easiest way to conduct this analysis is to have a shapefile with your independent variables (e.g. median household income) already stored as attributes. knowledgeable users could also modify this script to join a CSV file containing these variables as needed.
 
 This is currently built to:
+
 1. read the same `config.json` file as the node script
 2. use the same shapefile defined in `shapefile_path`
 2. open the SQLite database, and compute the average ETA for each sample area
