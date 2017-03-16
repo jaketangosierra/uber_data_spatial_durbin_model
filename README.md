@@ -2,8 +2,8 @@
 
 This package consists of two parts:
 
- - a node.js script for gathering data via the Uber developer API.
- - our analysis R file, which defines our spatial Durbin modelling approach.
+- a node.js script for gathering data via the Uber developer API.
+- our analysis- R file, which defines our spatial Durbin modelling approach.
 
 ## API script (ping_uber.js)
 Here, we have included the node-server (ping_uber.js). In our data collection, we wrapped this in a bash script to properly record the data. We also used a Chicago-specific shapefile for gathering data, and used an Uber Developer API key.
@@ -17,10 +17,10 @@ To use this, you will need:
 2. To update config.json, and to define `api_key`, `shapefile_path`, `shapefile_polygon_id`, and `weeks_to_run`
 
 These are defined as:
-* `api_key` - the Uber Developer API Server Token for your application.
-* `shapefile_path` - the path to the shapefile that contains your sample areas (e.g. census tracts)
-* `shapefile_polygon_id` - the name of the column for the unique ID of each sample area (e.g. FIPS code)
-* `weeks_to_run` - how many weeks you want to gather Uber data for (defaults to 1)
+- `api_key` - the Uber Developer API Server Token for your application.
+- `shapefile_path` - the path to the shapefile that contains your sample areas (e.g. census tracts)
+- `shapefile_polygon_id` - the name of the column for the unique ID of each sample area (e.g. FIPS code)
+- `weeks_to_run` - how many weeks you want to gather Uber data for (defaults to 1)
 
 To run install the necessary node packages, in the root of this directory, use the command:
 ```
